@@ -1,0 +1,28 @@
+uuid: e4330277-f56f-448c-a6b4-7f0a378bbc5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faculty_name_ref
+    - node.type.faculty_profiles
+    - node.type.research_glimpses
+id: node.research_glimpses.field_faculty_name_ref
+field_name: field_faculty_name_ref
+entity_type: node
+bundle: research_glimpses
+label: 'Faculty '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      faculty_profiles: faculty_profiles
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

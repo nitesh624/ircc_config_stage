@@ -1,0 +1,25 @@
+uuid: 78d307e7-0844-41d2-b447-d7b77ac7fe89
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:top_widgets:012c49d1-97fb-4af6-968f-482dc8f78aa2'
+  module:
+    - block_content
+  theme:
+    - ircc_new
+id: professionals
+theme: ircc_new
+region: topwidget_third
+weight: 0
+provider: null
+plugin: 'block_content:012c49d1-97fb-4af6-968f-482dc8f78aa2'
+settings:
+  id: 'block_content:012c49d1-97fb-4af6-968f-482dc8f78aa2'
+  label: Professionals
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

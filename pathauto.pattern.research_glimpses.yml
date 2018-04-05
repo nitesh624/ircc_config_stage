@@ -1,0 +1,22 @@
+uuid: f4490a6a-dee0-4375-b74d-4ba09e09f4ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: research_glimpses
+label: 'Research Glimpses'
+type: 'canonical_entities:node'
+pattern: 'research_glimplses/[node:title]'
+selection_criteria:
+  9eae70f8-5551-4565-aeb6-24a4074e4e30:
+    id: node_type
+    bundles:
+      research_glimpses: research_glimpses
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9eae70f8-5551-4565-aeb6-24a4074e4e30
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,28 @@
+uuid: e2895132-ec2f-40cd-bc53-d3e007bd0a4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_log_faculty
+    - node.type.faculty_profiles
+    - node.type.research_glimpses
+id: node.research_glimpses.field_log_faculty
+field_name: field_log_faculty
+entity_type: node
+bundle: research_glimpses
+label: 'Log Faculty'
+description: 'Field is for checking lookup in faculty profiles and do logging while migrating with yml files.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      faculty_profiles: faculty_profiles
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

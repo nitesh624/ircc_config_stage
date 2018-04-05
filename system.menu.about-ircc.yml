@@ -1,0 +1,8 @@
+uuid: 615c73cb-2227-41c5-bd21-650b1c391892
+langcode: en
+status: true
+dependencies: {  }
+id: about-ircc
+label: 'About IRCC'
+description: 'Menu for Static Pages'
+locked: false

@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[node:field_fdetails]'
+php: 1
+escape: 0
+dependencies:
+  config:
+    - node.type.faculty_info

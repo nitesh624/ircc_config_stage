@@ -1,0 +1,19 @@
+uuid: c3957197-2dd0-45a3-af38-f1fc302eb5c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_make_and_model
+    - node.type.research_facility
+id: node.research_facility.field_make_and_model
+field_name: field_make_and_model
+entity_type: node
+bundle: research_facility
+label: 'Make and Model'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

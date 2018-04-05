@@ -1,0 +1,24 @@
+uuid: bbd1eff8-580e-4c2c-924b-7777acc522ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.research_highlights
+  module:
+    - views
+  theme:
+    - ircc_new
+id: views_block__research_highlights_block_1
+theme: ircc_new
+region: research_highlights
+weight: -21
+provider: null
+plugin: 'views_block:research_highlights-block_1'
+settings:
+  id: 'views_block:research_highlights-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

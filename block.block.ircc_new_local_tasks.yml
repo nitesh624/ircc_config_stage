@@ -1,0 +1,22 @@
+uuid: 31008f23-e221-479c-88e9-838298f96d7f
+langcode: en
+status: false
+dependencies:
+  theme:
+    - ircc_new
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: ircc_new_local_tasks
+theme: ircc_new
+region: header
+weight: -19
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

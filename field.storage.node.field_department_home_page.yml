@@ -1,0 +1,19 @@
+uuid: 746c6543-c367-4741-8814-5ee5280ec641
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_department_home_page
+field_name: field_department_home_page
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

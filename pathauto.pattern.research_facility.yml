@@ -1,0 +1,22 @@
+uuid: a18d2b3c-1a27-43c6-828f-b2e9c3d86e3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: research_facility
+label: 'Research Facility'
+type: 'canonical_entities:node'
+pattern: 'research_facility/[node:title]'
+selection_criteria:
+  f99a5a30-0c1c-40d6-bde0-5454cd5db9d9:
+    id: node_type
+    bundles:
+      research_facility: research_facility
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f99a5a30-0c1c-40d6-bde0-5454cd5db9d9
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,29 @@
+uuid: 9f71deb3-d2bd-4cca-9144-7fee377d67f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.solr_search_technolo
+  module:
+    - system
+    - views
+  theme:
+    - ircc_new
+id: exposedformsolr_search_technolopage_1
+theme: ircc_new
+region: content
+weight: -19
+provider: null
+plugin: 'views_exposed_filter_block:solr_search_technolo-page_1'
+settings:
+  id: 'views_exposed_filter_block:solr_search_technolo-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-search/technologies
+    negate: false
+    context_mapping: {  }

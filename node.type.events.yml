@@ -1,0 +1,17 @@
+uuid: d706352f-a29a-4576-a21c-a39824003db9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Events
+type: events
+description: 'It holds the event info '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,22 @@
+uuid: ac440a6d-df0e-4728-be17-4942ed31a6dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.research_glimpses
+id: node.research_glimpses.promote
+field_name: promote
+entity_type: node
+bundle: research_glimpses
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

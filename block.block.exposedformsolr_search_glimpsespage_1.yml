@@ -1,0 +1,29 @@
+uuid: f6033af5-7629-4aa2-9908-d5f77867f47e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.solr_search_glimpses
+  module:
+    - system
+    - views
+  theme:
+    - ircc_new
+id: exposedformsolr_search_glimpsespage_1
+theme: ircc_new
+region: sidebar_first
+weight: -22
+provider: null
+plugin: 'views_exposed_filter_block:solr_search_glimpses-page_1'
+settings:
+  id: 'views_exposed_filter_block:solr_search_glimpses-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-search/glimpses
+    negate: false
+    context_mapping: {  }

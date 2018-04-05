@@ -1,0 +1,22 @@
+uuid: c875693d-4343-4ef4-a37d-e232f814e40f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: technology
+label: Technology
+type: 'canonical_entities:node'
+pattern: 'technology/[node:title]'
+selection_criteria:
+  da552153-2734-46d8-8578-909306d1ff60:
+    id: node_type
+    bundles:
+      technology: technology
+    negate: false
+    context_mapping:
+      node: node
+    uuid: da552153-2734-46d8-8578-909306d1ff60
+selection_logic: and
+weight: -5
+relationships: {  }

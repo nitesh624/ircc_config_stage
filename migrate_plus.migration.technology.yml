@@ -1,0 +1,99 @@
+uuid: f16985c1-8c39-4378-a462-fb6ac2a9a052
+langcode: en
+status: true
+dependencies: {  }
+id: technology
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - CSV
+migration_group: ircc
+label: 'Technology content migration'
+source:
+  plugin: csv
+  path: /var/www/irccmigration/csv/technology.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - TechnologySrNo
+    - CategorySrNo
+    - TitleSrNo
+  column_names:
+    -
+      TechnologySrNo: TechnologySrNo
+    -
+      CategorySrNo: CategorySrNo
+    -
+      TitleSrNo: TitleSrNo
+    -
+      TechnologyTitle: TechnologyTitle
+    -
+      NameOfInventor: NameOfInventor
+    -
+      FacultyDispName: FacultyDisplayName
+    -
+      EmpCode: 'Emp Code'
+    -
+      Department: Department
+    -
+      URL: URL
+    -
+      PatentApplicationNum: 'Patent Application Num'
+    -
+      PatentGrantNum: 'Patent Grant Num'
+    -
+      CategoryName: 'Category Name'
+    -
+      Description: Description
+process:
+  type:
+    plugin: default_value
+    default_value: technology
+  field_technology_sr_no: TechnologySrNo
+  field_category_sr_no: CategorySrNo
+  field_title_sr_no: TitleSrNo
+  title: TechnologyTitle
+  field_name_of_inventor/value: NameOfInventor
+  field_name_of_inventor/format:
+    plugin: default_value
+    default_value: glossicustom
+  field_faculty_name_ref:
+    -
+      plugin: explode
+      delimiter: ;
+      source: EmpCode
+    -
+      plugin: entity_lookup
+      entity_type: node
+      bundle: faculty_profiles
+      value_key: field_emp_code
+  field_log_faculty:
+    -
+      plugin: explode
+      delimiter: ;
+      source: EmpCode
+    -
+      plugin: entity_lookup
+      entity_type: node
+      bundle: faculty_profiles
+      value_key: field_emp_code
+    -
+      plugin: log
+      source: EmpCode
+  field_url: URL
+  field_category_ref:
+    -
+      plugin: entity_lookup
+      entity_type: taxonomy_term
+      bundle: technology_category
+      source: CategoryName
+  field_patent_application_no: PatentApplicationNum
+  field_patent_grant_no: PatentGrantNum
+  body: Description
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required: {  }
+  optional: {  }

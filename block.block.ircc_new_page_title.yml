@@ -1,0 +1,27 @@
+uuid: 436a0d31-8d3e-4d8e-a3db-692ab028bb38
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ircc_new
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: ircc_new_page_title
+theme: ircc_new
+region: content
+weight: -22
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/node/*'
+    negate: true
+    context_mapping: {  }

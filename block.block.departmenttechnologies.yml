@@ -1,0 +1,28 @@
+uuid: 860c1a30-b10e-4d0b-a217-f68358576ba1
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.department_technologies
+  module:
+    - facets
+    - system
+  theme:
+    - ircc_new
+id: departmenttechnologies
+theme: ircc_new
+region: sidebar_first
+weight: -18
+provider: null
+plugin: 'facet_block:department_technologies'
+settings:
+  id: 'facet_block:department_technologies'
+  label: Department
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-search/technologies
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,9 @@
+uuid: df16b980-e8d2-4bc1-b619-7941ee9a92d0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Research Glimpse Category'
+vid: research_glimpse_category
+description: 'Categorization of Research Glimpse '
+hierarchy: 0
+weight: 0

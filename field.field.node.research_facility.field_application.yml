@@ -1,0 +1,19 @@
+uuid: 26c6f210-f142-4116-9936-dd8d5a92c433
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_application
+    - node.type.research_facility
+id: node.research_facility.field_application
+field_name: field_application
+entity_type: node
+bundle: research_facility
+label: Application
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

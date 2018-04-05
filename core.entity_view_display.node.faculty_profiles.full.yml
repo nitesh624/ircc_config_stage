@@ -1,0 +1,452 @@
+uuid: febcf84a-5f18-4eee-990c-e7a4b934b908
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.faculty_profiles.body
+    - field.field.node.faculty_profiles.field_area_of_expertise
+    - field.field.node.faculty_profiles.field_contact_no
+    - field.field.node.faculty_profiles.field_department_ref
+    - field.field.node.faculty_profiles.field_designation
+    - field.field.node.faculty_profiles.field_display_name
+    - field.field.node.faculty_profiles.field_email_id
+    - field.field.node.faculty_profiles.field_emp_code
+    - field.field.node.faculty_profiles.field_faculty_image
+    - field.field.node.faculty_profiles.field_faculty_name
+    - field.field.node.faculty_profiles.field_google_scholar_id
+    - field.field.node.faculty_profiles.field_home_page_url
+    - field.field.node.faculty_profiles.field_scopus_id
+    - node.type.faculty_profiles
+  module:
+    - ds
+    - name
+    - spamspan
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_reset
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: ''
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_faculty_name
+        - field_department_ref
+        - field_scopus_id
+        - field_google_scholar_id
+        - field_email_id
+        - field_designation
+        - 'dynamic_block_field:node-related_facilities'
+        - 'dynamic_block_field:node-related_glimpses'
+        - 'dynamic_block_field:node-related_technologies'
+        - field_area_of_expertise
+    fields:
+      'dynamic_block_field:node-related_facilities':
+        plugin_id: 'dynamic_block_field:node-related_facilities'
+        weight: 6
+        label: above
+        formatter: default
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: h5
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+      'dynamic_block_field:node-related_glimpses':
+        plugin_id: 'dynamic_block_field:node-related_glimpses'
+        weight: 7
+        label: above
+        formatter: default
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: h5
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+      'dynamic_block_field:node-related_technologies':
+        plugin_id: 'dynamic_block_field:node-related_technologies'
+        weight: 8
+        label: above
+        formatter: default
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: h5
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+id: node.faculty_profiles.full
+targetEntityType: node
+bundle: faculty_profiles
+mode: full
+content:
+  field_area_of_expertise:
+    type: entity_reference_label
+    weight: 9
+    region: ds_content
+    label: inline
+    settings:
+      link: true
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: h5
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+  field_department_ref:
+    type: entity_reference_label
+    weight: 1
+    region: ds_content
+    label: above
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: h5
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+  field_designation:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: h5
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: string
+    region: ds_content
+  field_email_id:
+    type: email_spamspan
+    weight: 4
+    region: ds_content
+    label: above
+    settings:
+      spamspan_at: ' [at] '
+      spamspan_use_graphic: '1'
+      spamspan_dot_enable: '1'
+      spamspan_dot: ' [dot] '
+      spamspan_use_form: 0
+      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
+      spamspan_form_default_url: contact
+      spamspan_form_default_displaytext: 'contact form'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+  field_faculty_name:
+    type: name_default
+    weight: 0
+    region: ds_content
+    label: above
+    settings:
+      format: default
+      markup: true
+      output: default
+      multiple: default
+      multiple_delimiter: ', '
+      multiple_and: text
+      multiple_delimiter_precedes_last: never
+      multiple_el_al_min: '3'
+      multiple_el_al_first: '1'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: h5
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+  field_google_scholar_id:
+    type: string
+    weight: 3
+    region: ds_content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: a
+            fi-cl: ''
+            fi-at: 'href="https://scholar.google.co.in/citations?user={{ field_google_scholar_id }}" title="Visit Google Scholar" target="_blank"'
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: 'https://scholar.google.co.in/citations?user=[node:field_google_scholar_id]'
+        advanced:
+          title: 'Visit Google Scholar'
+          target: _blank
+          href: 'https://scholar.google.co.in/citations?user=[node:field_google_scholar_id]'
+          text: 'Visit Google Scholar'
+  field_scopus_id:
+    type: string
+    weight: 2
+    region: ds_content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: h5
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: 'https://www.scopus.com/authid/detail.uri?authorId=[node:field_scopus_id]'
+        advanced:
+          title: 'Visit Scopus Profile'
+          target: _blank
+          href: 'https://www.scopus.com/authid/detail.uri?authorId=[node:field_scopus_id]'
+          text: 'Visit Scopus Profile'
+hidden:
+  body: true
+  field_contact_no: true
+  field_display_name: true
+  field_emp_code: true
+  field_faculty_image: true
+  field_home_page_url: true
+  links: true

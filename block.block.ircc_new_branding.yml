@@ -1,0 +1,25 @@
+uuid: 64be9c61-2845-47e6-9320-ac6b37e7a7aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ircc_new
+_core:
+  default_config_hash: Cy3vkpYrD1O5JG-BeEnokF0bByHYDEa8CBfWivB4_SQ
+id: ircc_new_branding
+theme: ircc_new
+region: header
+weight: -22
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

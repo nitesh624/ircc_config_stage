@@ -1,0 +1,247 @@
+uuid: ac576604-d89a-4776-8863-35e34d614d5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - field.storage.node.field_faculty_name_ref
+    - field.storage.node.field_department_ref
+    - field.storage.node.field_area_of_expertise
+    - field.storage.node.field_contact_name_ref
+    - search_api.server.default_solr_server
+    - core.entity_view_mode.node.teaser
+  module:
+    - user
+    - node
+    - search_api
+    - taxonomy
+_core:
+  default_config_hash: 5gcfQOCjXVt6We4_q02H8VjnECSON5NgKOchFAsncxU
+id: default_solr_index
+name: 'Default Solr content index'
+description: 'Default content index created by the Solr Search Defaults module'
+read_only: false
+field_settings:
+  rendered_item:
+    label: 'Rendered item'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          article: ''
+          department: teaser
+          faculty_profiles: default
+          page: default
+          research_facility: teaser
+          slideshow: default
+          technology: default
+        'entity:taxonomy_term':
+          area: ''
+          specialisation_tags: ''
+          tags: ''
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 8
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+  changed:
+    label: Changed
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+  status:
+    label: 'Publishing status'
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+  sticky:
+    label: 'Sticky at top of lists'
+    datasource_id: 'entity:node'
+    property_path: sticky
+    type: boolean
+  field_tags:
+    label: Tags
+    datasource_id: 'entity:node'
+    property_path: field_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+  author:
+    label: 'Author name'
+    datasource_id: 'entity:node'
+    property_path: 'uid:entity:name'
+    type: string
+    dependencies:
+      module:
+        - user
+  uid:
+    label: 'Author ID'
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+  field_faculty_name_ref:
+    label: 'Faculty Name'
+    datasource_id: 'entity:node'
+    property_path: field_faculty_name_ref
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_faculty_name_ref
+  field_department_ref:
+    label: 'Contact name » Content » Department'
+    datasource_id: 'entity:node'
+    property_path: 'field_faculty_name_ref:entity:field_department_ref'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_faculty_name_ref
+        - field.storage.node.field_department_ref
+      module:
+        - node
+  field_area_of_expertise:
+    label: 'Contact name » Content » Area Of Expertise'
+    datasource_id: 'entity:node'
+    property_path: 'field_faculty_name_ref:entity:field_area_of_expertise'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_faculty_name_ref
+        - field.storage.node.field_area_of_expertise
+      module:
+        - node
+  field_contact_name_ref:
+    label: 'Contact name'
+    datasource_id: 'entity:node'
+    property_path: field_contact_name_ref
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_contact_name_ref
+  field_department_ref_1:
+    label: 'Contact name » Content » Department'
+    datasource_id: 'entity:node'
+    property_path: 'field_contact_name_ref:entity:field_department_ref'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_contact_name_ref
+        - field.storage.node.field_department_ref
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected:
+        - slideshow
+    languages:
+      default: true
+      selected: {  }
+  'entity:taxonomy_term':
+    bundles:
+      default: false
+      selected:
+        - area_of_expertise
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  entity_status:
+    weights:
+      preprocess_index: -10
+  aggregated_field:
+    weights:
+      add_properties: 20
+  content_access:
+    weights:
+      preprocess_index: -6
+      preprocess_query: -4
+  add_url:
+    weights:
+      preprocess_index: -30
+  ignorecase:
+    all_fields: false
+    fields:
+      - rendered_item
+      - title
+      - author
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  tokenizer:
+    all_fields: false
+    fields:
+      - rendered_item
+      - title
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+  rendered_item:
+    weights:
+      add_properties: 0
+      pre_index_save: -10
+  html_filter:
+    all_fields: true
+    fields:
+      - rendered_item
+      - title
+      - author
+      - type
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      string: 2
+      b: 2
+    weights:
+      preprocess_index: -3
+      preprocess_query: -6
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: default_solr_server

@@ -1,0 +1,19 @@
+uuid: 2fee1d4f-1db3-4bc8-9899-8c98fb7fae50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_department_email
+    - node.type.department
+id: node.department.field_department_email
+field_name: field_department_email
+entity_type: node
+bundle: department
+label: 'Department Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,14 @@
+uuid: 9476d624-6c67-4ab3-aab1-59a18ae93b84
+langcode: en
+status: true
+dependencies: {  }
+name: slides_1300x500_
+label: 'Slides (1300x500)'
+effects:
+  d9b6440e-3500-4102-8e77-cd970334f36d:
+    uuid: d9b6440e-3500-4102-8e77-cd970334f36d
+    id: image_resize
+    weight: 1
+    data:
+      width: 1300
+      height: 500

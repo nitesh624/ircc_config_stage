@@ -1,0 +1,25 @@
+uuid: 3bb2c0be-9648-42a2-9ca7-7186de395e48
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:76a4287a-4dac-4ff5-94d9-1aab27243bbc'
+  module:
+    - block_content
+  theme:
+    - ircc_new
+id: ircc_new_copyrights
+theme: ircc_new
+region: footer_bottom_left
+weight: -15
+provider: null
+plugin: 'block_content:76a4287a-4dac-4ff5-94d9-1aab27243bbc'
+settings:
+  id: 'block_content:76a4287a-4dac-4ff5-94d9-1aab27243bbc'
+  label: Copyrights
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

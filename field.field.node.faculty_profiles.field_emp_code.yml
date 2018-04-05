@@ -1,0 +1,19 @@
+uuid: f403b953-2803-48e4-b993-75d6d0d1aadb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_emp_code
+    - node.type.faculty_profiles
+id: node.faculty_profiles.field_emp_code
+field_name: field_emp_code
+entity_type: node
+bundle: faculty_profiles
+label: 'Emp Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

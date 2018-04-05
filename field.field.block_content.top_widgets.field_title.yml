@@ -1,0 +1,19 @@
+uuid: d42f1ffc-4807-4df9-98ee-689801f075a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_widgets
+    - field.storage.block_content.field_title
+id: block_content.top_widgets.field_title
+field_name: field_title
+entity_type: block_content
+bundle: top_widgets
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

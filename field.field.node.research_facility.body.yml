@@ -1,0 +1,22 @@
+uuid: d07a3d2d-f6d7-4e31-9c3d-ad9dd34fd0e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.research_facility
+  module:
+    - text
+id: node.research_facility.body
+field_name: body
+entity_type: node
+bundle: research_facility
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

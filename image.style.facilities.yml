@@ -1,0 +1,14 @@
+uuid: fd3d5c70-6c0d-4115-ade4-e223f465a4c3
+langcode: en
+status: true
+dependencies: {  }
+name: facilities
+label: facilities
+effects:
+  593f815c-c40f-4900-9899-aca00330194c:
+    uuid: 593f815c-c40f-4900-9899-aca00330194c
+    id: image_resize
+    weight: 1
+    data:
+      width: 500
+      height: 300

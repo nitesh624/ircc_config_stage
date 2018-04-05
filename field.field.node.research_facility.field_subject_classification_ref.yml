@@ -1,0 +1,29 @@
+uuid: ef9a348d-68b9-4021-92db-0badcffad81a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subject_classification_ref
+    - node.type.research_facility
+    - taxonomy.vocabulary.subject_classification
+id: node.research_facility.field_subject_classification_ref
+field_name: field_subject_classification_ref
+entity_type: node
+bundle: research_facility
+label: 'Subject classification'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subject_classification: subject_classification
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

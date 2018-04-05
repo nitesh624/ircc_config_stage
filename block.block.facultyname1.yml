@@ -1,0 +1,28 @@
+uuid: 72c5e788-a41c-4efe-a058-18bd33273a71
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.faculty_name1
+  module:
+    - facets
+    - system
+  theme:
+    - ircc_new
+id: facultyname1
+theme: ircc_new
+region: sidebar_first
+weight: -21
+provider: null
+plugin: 'facet_block:faculty_name1'
+settings:
+  id: 'facet_block:faculty_name1'
+  label: Faculty
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-search/facilities
+    negate: false
+    context_mapping: {  }

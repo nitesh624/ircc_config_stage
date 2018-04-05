@@ -1,0 +1,17 @@
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: 'public://ircc_logo_0.png'
+  url: ''
+  use_default: 0
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://localhost/ircc/themes/ircc_new/favicon.ico'
+  use_default: 1
+schemas:
+  bootstrap: 8000
+  ircc_new: 8000

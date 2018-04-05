@@ -1,0 +1,24 @@
+uuid: 18417f2b-67c5-4e24-978f-b6e0978fe472
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.about-ircc
+  module:
+    - system
+  theme:
+    - ircc_new
+id: aboutircc
+theme: ircc_new
+region: footer_second
+weight: -18
+provider: null
+plugin: 'system_menu_block:about-ircc'
+settings:
+  id: 'system_menu_block:about-ircc'
+  label: 'About IRCC'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

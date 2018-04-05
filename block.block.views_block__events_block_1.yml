@@ -1,0 +1,24 @@
+uuid: 4a89a5b5-d002-44d3-a092-e68a5515296f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - views
+  theme:
+    - ircc_new
+id: views_block__events_block_1
+theme: ircc_new
+region: events
+weight: -18
+provider: null
+plugin: 'views_block:events-block_1'
+settings:
+  id: 'views_block:events-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

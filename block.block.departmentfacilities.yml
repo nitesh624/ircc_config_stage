@@ -1,0 +1,28 @@
+uuid: e0988bb0-35fc-4d63-a41c-2c1027a5f44c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.department_fa
+  module:
+    - facets
+    - system
+  theme:
+    - ircc_new
+id: departmentfacilities
+theme: ircc_new
+region: sidebar_first
+weight: -16
+provider: null
+plugin: 'facet_block:department_fa'
+settings:
+  id: 'facet_block:department_fa'
+  label: Department
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-search/facilities
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,19 @@
+uuid: 5acdc425-4ebb-40d3-bd10-9a562f564fd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facility_contact_email
+    - node.type.research_facility
+id: node.research_facility.field_facility_contact_email
+field_name: field_facility_contact_email
+entity_type: node
+bundle: research_facility
+label: 'Contact Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

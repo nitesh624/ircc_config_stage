@@ -1,0 +1,30 @@
+uuid: ba558dd7-f4c9-46b0-82b7-f259f0759f50
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_image_news
+field_name: field_image_news
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: e98cfb71-ddd6-4f48-8b25-66c11f238cf5
+    alt: default
+    title: 'default image'
+    width: 350
+    height: 350
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

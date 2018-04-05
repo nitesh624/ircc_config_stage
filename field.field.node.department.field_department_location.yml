@@ -1,0 +1,21 @@
+uuid: 78212d16-581f-4ddf-9538-7ce3bd87ecf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_department_location
+    - node.type.department
+  module:
+    - text
+id: node.department.field_department_location
+field_name: field_department_location
+entity_type: node
+bundle: department
+label: 'Department location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

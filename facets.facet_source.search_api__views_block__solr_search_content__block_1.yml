@@ -1,0 +1,12 @@
+uuid: cb3e36d0-7644-42d7-aff4-430f7adf47d2
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_block__solr_search_content__block_1
+name: 'search_api:views_block__solr_search_content__block_1'
+filter_key: '1'
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

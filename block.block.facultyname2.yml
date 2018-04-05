@@ -1,0 +1,28 @@
+uuid: 69e3d775-f99e-4153-b7b8-4cc66cb8da7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.faculty_name2
+  module:
+    - facets
+    - system
+  theme:
+    - ircc_new
+id: facultyname2
+theme: ircc_new
+region: sidebar_first
+weight: -20
+provider: null
+plugin: 'facet_block:faculty_name2'
+settings:
+  id: 'facet_block:faculty_name2'
+  label: Faculty
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-search/glimpses
+    negate: false
+    context_mapping: {  }

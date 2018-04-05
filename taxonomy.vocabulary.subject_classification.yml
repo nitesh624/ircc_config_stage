@@ -1,0 +1,9 @@
+uuid: 3fd1a5aa-cf11-473d-beae-43e34a1db2d5
+langcode: en
+status: true
+dependencies: {  }
+name: 'subject classification'
+vid: subject_classification
+description: 'Structured taxonomy'
+hierarchy: 0
+weight: 0

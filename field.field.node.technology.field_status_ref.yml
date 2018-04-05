@@ -1,0 +1,29 @@
+uuid: 0931bee2-7621-414d-b1c7-e4849d502ebf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status_ref
+    - node.type.technology
+    - taxonomy.vocabulary.market_readiness
+id: node.technology.field_status_ref
+field_name: field_status_ref
+entity_type: node
+bundle: technology
+label: 'Market readiness status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      market_readiness: market_readiness
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

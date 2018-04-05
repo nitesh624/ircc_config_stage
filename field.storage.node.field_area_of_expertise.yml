@@ -1,0 +1,20 @@
+uuid: 8af7fad4-eb5d-4e17-a19b-260375acae35
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_area_of_expertise
+field_name: field_area_of_expertise
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

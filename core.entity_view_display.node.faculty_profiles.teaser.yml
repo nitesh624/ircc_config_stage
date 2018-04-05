@@ -1,0 +1,52 @@
+uuid: d2e54b3f-430b-47c1-aa01-2ffd879fe993
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.faculty_profiles.body
+    - field.field.node.faculty_profiles.field_area_of_expertise
+    - field.field.node.faculty_profiles.field_contact_no
+    - field.field.node.faculty_profiles.field_department_ref
+    - field.field.node.faculty_profiles.field_designation
+    - field.field.node.faculty_profiles.field_display_name
+    - field.field.node.faculty_profiles.field_email_id
+    - field.field.node.faculty_profiles.field_emp_code
+    - field.field.node.faculty_profiles.field_faculty_image
+    - field.field.node.faculty_profiles.field_faculty_name
+    - field.field.node.faculty_profiles.field_google_scholar_id
+    - field.field.node.faculty_profiles.field_home_page_url
+    - field.field.node.faculty_profiles.field_scopus_id
+    - node.type.faculty_profiles
+  module:
+    - text
+    - user
+id: node.faculty_profiles.teaser
+targetEntityType: node
+bundle: faculty_profiles
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_area_of_expertise: true
+  field_contact_no: true
+  field_department_ref: true
+  field_designation: true
+  field_display_name: true
+  field_email_id: true
+  field_emp_code: true
+  field_faculty_image: true
+  field_faculty_name: true
+  field_google_scholar_id: true
+  field_home_page_url: true
+  field_scopus_id: true

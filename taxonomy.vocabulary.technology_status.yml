@@ -1,0 +1,9 @@
+uuid: 804e316b-cf2a-45e8-8bda-93f2e9eebc4c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Technology Status'
+vid: technology_status
+description: 'Status of technology either patent filed or patent granted'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,23 @@
+uuid: 9978de1d-a749-4864-be6b-57543431339c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_department_home_page
+    - node.type.department
+  module:
+    - link
+id: node.department.field_department_home_page
+field_name: field_department_home_page
+entity_type: node
+bundle: department
+label: 'Department Home page'
+description: 'Enter Home page url for Respective Department '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

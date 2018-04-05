@@ -1,0 +1,29 @@
+uuid: 9e1e559e-88ce-488b-bc94-d379fdee345b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.solr_search_facilities
+  module:
+    - system
+    - views
+  theme:
+    - ircc_new
+id: exposedformsolr_search_facilitiespage_1
+theme: ircc_new
+region: content
+weight: -20
+provider: null
+plugin: 'views_exposed_filter_block:solr_search_facilities-page_1'
+settings:
+  id: 'views_exposed_filter_block:solr_search_facilities-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: 'Search For Facilities'
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-search/facilities
+    negate: false
+    context_mapping: {  }

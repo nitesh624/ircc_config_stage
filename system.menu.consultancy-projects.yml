@@ -1,0 +1,8 @@
+uuid: 4c9168a0-5cc2-4f0a-9449-17d5eee29bfc
+langcode: en
+status: true
+dependencies: {  }
+id: consultancy-projects
+label: 'Consultancy Projects'
+description: 'Menu for Static Pages'
+locked: false

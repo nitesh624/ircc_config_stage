@@ -1,0 +1,19 @@
+uuid: 1098d65d-77a5-48a8-a7ea-aaa87f63c73c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unique_features
+    - node.type.technology
+id: node.technology.field_unique_features
+field_name: field_unique_features
+entity_type: node
+bundle: technology
+label: 'Unique Features'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

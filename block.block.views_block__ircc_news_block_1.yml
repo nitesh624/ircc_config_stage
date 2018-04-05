@@ -1,0 +1,24 @@
+uuid: a0009457-51a3-4d24-a490-1935d2084c26
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.ircc_news
+  module:
+    - views
+  theme:
+    - ircc_new
+id: views_block__ircc_news_block_1
+theme: ircc_new
+region: news
+weight: 0
+provider: null
+plugin: 'views_block:ircc_news-block_1'
+settings:
+  id: 'views_block:ircc_news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

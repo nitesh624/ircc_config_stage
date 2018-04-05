@@ -1,0 +1,21 @@
+uuid: 432824ed-e31a-4651-9223-4db818fa0588
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use exclude node title'
+  - 'use search_api_autocomplete for solr_search_content'
+  - 'use text format basic_html'

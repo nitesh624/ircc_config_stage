@@ -1,0 +1,82 @@
+uuid: 90ab01a3-622e-4564-a68b-8a26afb54756
+langcode: en
+status: true
+dependencies:
+  module:
+    - editor
+    - glossify_node
+    - inline_responsive_images
+_core:
+  default_config_hash: hewPmBgni9jlDK_IjLxUx1HsTbinK-hdl0lOwjbteIY
+name: 'Full HTML'
+format: full_html
+weight: 1
+filters:
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 8
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 11
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <pre>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  glossify_node:
+    id: glossify_node
+    provider: glossify_node
+    status: true
+    weight: -10
+    settings:
+      glossify_node_case_sensitivity: '1'
+      glossify_node_first_only: '0'
+      glossify_node_type: tooltips_links
+      glossify_node_bundles: faculty_profiles
+      glossify_node_urlpattern: '/node/[id]'
+  filter_responsive_image_style:
+    id: filter_responsive_image_style
+    provider: inline_responsive_images
+    status: false
+    weight: 0
+    settings:
+      responsive_style_narrow: '0'
+      responsive_style_wide: '0'
+  filter_imagestyle:
+    id: filter_imagestyle
+    provider: inline_responsive_images
+    status: false
+    weight: 0
+    settings:
+      image_style_facilities: '0'
+      image_style_large: '0'
+      image_style_max_1300x1300: '0'
+      image_style_max_2600x2600: '0'
+      image_style_max_325x325: '0'
+      image_style_max_650x650: '0'
+      image_style_medium: '0'
+      image_style_slides_1300x500_: '0'
+      image_style_thumbnail: '0'
+      image_style_top_widgets_image: '0'

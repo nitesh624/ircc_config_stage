@@ -1,0 +1,47 @@
+uuid: b996180d-9c21-4305-8912-a6e2d860ca5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.default_solr_index
+    - views.view.solr_search_technolo
+  module:
+    - views
+    - search_api_autocomplete
+id: solr_search_technolo
+label: 'Solr Search Technologies'
+index_id: default_solr_index
+suggester_settings:
+  live_results:
+    fields: {  }
+    view_modes:
+      'entity:node':
+        article: ''
+        department: ''
+        events: ''
+        faculty_profiles: ''
+        news: ''
+        page: ''
+        research_facility: ''
+        research_glimpses: ''
+        technology: ''
+      'entity:taxonomy_term':
+        area_of_expertise: ''
+  server:
+    fields: {  }
+suggester_weights:
+  live_results: 0
+  server: 0
+suggester_limits: {  }
+search_settings:
+  'views:solr_search_technolo':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  autosubmit: true
+  submit_button_selector: ':submit'
+  delay: null

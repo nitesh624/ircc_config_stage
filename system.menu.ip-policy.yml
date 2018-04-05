@@ -1,0 +1,8 @@
+uuid: 4575cf20-6465-44c9-a959-e0be2aacf9ea
+langcode: en
+status: true
+dependencies: {  }
+id: ip-policy
+label: 'IP Policy'
+description: 'Menu for Static Pages'
+locked: false

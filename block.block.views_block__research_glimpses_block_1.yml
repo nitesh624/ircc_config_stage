@@ -1,0 +1,30 @@
+uuid: 50fa8702-ce82-4f5c-bfe1-80a165342b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.research_glimpses
+  module:
+    - system
+    - views
+  theme:
+    - ircc_new
+id: views_block__research_glimpses_block_1
+theme: ircc_new
+region: content
+weight: -14
+provider: null
+plugin: 'views_block:research_glimpses-block_1'
+settings:
+  id: 'views_block:research_glimpses-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /research-glipmses
+    negate: false
+    context_mapping: {  }

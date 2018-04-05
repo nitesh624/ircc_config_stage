@@ -1,0 +1,15 @@
+uuid: 6a2d8d87-2eda-4add-af62-ec6454070313
+langcode: en
+status: true
+dependencies: {  }
+name: top_widgets_image
+label: 'Top Widgets image'
+effects:
+  ea83b1c0-03da-4173-937c-b9b93f645540:
+    uuid: ea83b1c0-03da-4173-937c-b9b93f645540
+    id: image_scale
+    weight: 1
+    data:
+      width: 249
+      height: 245
+      upscale: true

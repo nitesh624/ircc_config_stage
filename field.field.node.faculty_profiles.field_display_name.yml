@@ -1,0 +1,19 @@
+uuid: 8da6e847-f466-4325-90db-3eea6d567da1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_name
+    - node.type.faculty_profiles
+id: node.faculty_profiles.field_display_name
+field_name: field_display_name
+entity_type: node
+bundle: faculty_profiles
+label: 'Display name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

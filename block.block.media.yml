@@ -1,0 +1,25 @@
+uuid: de49a317-2f83-40d1-9cef-ac098e9428c2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:top_widgets:73eb0d68-a862-4b1d-836e-0d57b313a4c4'
+  module:
+    - block_content
+  theme:
+    - ircc_new
+id: media
+theme: ircc_new
+region: topwidget_fourth
+weight: 0
+provider: null
+plugin: 'block_content:73eb0d68-a862-4b1d-836e-0d57b313a4c4'
+settings:
+  id: 'block_content:73eb0d68-a862-4b1d-836e-0d57b313a4c4'
+  label: Media
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

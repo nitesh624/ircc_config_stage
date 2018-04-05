@@ -1,0 +1,17 @@
+uuid: 3d7cc94d-0a00-43a6-8507-3f79d32bfad3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Department
+type: department
+description: 'This Content type is used to store the Department Information'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,28 @@
+uuid: cd84448b-96f3-4451-a99b-54407a68c52b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faculty_name_ref
+    - node.type.faculty_profiles
+    - node.type.technology
+id: node.technology.field_faculty_name_ref
+field_name: field_faculty_name_ref
+entity_type: node
+bundle: technology
+label: 'Faculty Associated : '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      faculty_profiles: faculty_profiles
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

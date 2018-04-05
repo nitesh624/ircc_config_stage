@@ -1,0 +1,30 @@
+uuid: 43ede2dd-e99d-42ab-8e15-ea341cc5a2ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.technology
+  module:
+    - system
+    - views
+  theme:
+    - ircc_new
+id: views_block__technology_block_1
+theme: ircc_new
+region: content
+weight: -13
+provider: null
+plugin: 'views_block:technology-block_1'
+settings:
+  id: 'views_block:technology-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /technology
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,8 @@
+uuid: f65ea39a-088f-45bd-be95-7c74c8a7a104
+langcode: en
+status: true
+dependencies: {  }
+id: top_widgets
+label: 'Top Widgets'
+revision: 0
+description: 'This Block contains the Title, Text and Image field.'

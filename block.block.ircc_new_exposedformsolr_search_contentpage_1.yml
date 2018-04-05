@@ -1,0 +1,23 @@
+uuid: 5efb99e6-364b-4f1c-a6cd-378a3abc2a6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.solr_search_content
+  module:
+    - views
+  theme:
+    - ircc_new
+id: ircc_new_exposedformsolr_search_contentpage_1
+theme: ircc_new
+region: header_search
+weight: -21
+provider: null
+plugin: 'views_exposed_filter_block:solr_search_content-page_1'
+settings:
+  id: 'views_exposed_filter_block:solr_search_content-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

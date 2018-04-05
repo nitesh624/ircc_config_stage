@@ -1,0 +1,20 @@
+uuid: f33f67d6-e782-49f9-bc5e-5ca5c2435c5c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ircc_new
+id: tabs
+theme: ircc_new
+region: content
+weight: -21
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

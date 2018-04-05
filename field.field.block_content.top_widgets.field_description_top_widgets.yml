@@ -1,0 +1,21 @@
+uuid: a800e3df-5812-42fb-9f19-c21c91f0cab1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_widgets
+    - field.storage.block_content.field_description_top_widgets
+  module:
+    - text
+id: block_content.top_widgets.field_description_top_widgets
+field_name: field_description_top_widgets
+entity_type: block_content
+bundle: top_widgets
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

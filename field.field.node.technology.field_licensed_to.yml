@@ -1,0 +1,19 @@
+uuid: 8c656312-20f7-41bf-b45b-9e12ca6bc8b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_licensed_to
+    - node.type.technology
+id: node.technology.field_licensed_to
+field_name: field_licensed_to
+entity_type: node
+bundle: technology
+label: 'Licensed to'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

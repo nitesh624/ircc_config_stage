@@ -1,0 +1,21 @@
+uuid: 0e4c8f83-63bd-4449-b970-0e84bdf0b01c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_of_inventor
+    - node.type.technology
+  module:
+    - text
+id: node.technology.field_name_of_inventor
+field_name: field_name_of_inventor
+entity_type: node
+bundle: technology
+label: Inventor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,31 @@
+uuid: bd813445-a73b-439d-86ac-792a5a9fb846
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.default_solr_index
+    - views.view.solr_search_facilities
+  module:
+    - views
+    - search_api_autocomplete
+id: solr_search_facilities
+label: 'Solr Search Facilities'
+index_id: default_solr_index
+suggester_settings:
+  server:
+    fields: {  }
+suggester_weights:
+  server: 0
+suggester_limits: {  }
+search_settings:
+  'views:solr_search_facilities':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  autosubmit: true
+  submit_button_selector: ':submit'
+  delay: null

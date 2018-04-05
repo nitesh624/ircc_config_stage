@@ -1,0 +1,25 @@
+uuid: 910d152d-21c3-40c2-9940-206ca539a19a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:top_widgets:940738cf-e1c7-4053-98e9-5de5a530897e'
+  module:
+    - block_content
+  theme:
+    - ircc_new
+id: academia
+theme: ircc_new
+region: topwidget_second
+weight: 0
+provider: null
+plugin: 'block_content:940738cf-e1c7-4053-98e9-5de5a530897e'
+settings:
+  id: 'block_content:940738cf-e1c7-4053-98e9-5de5a530897e'
+  label: Academia
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

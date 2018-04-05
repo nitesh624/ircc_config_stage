@@ -1,0 +1,25 @@
+uuid: 88595353-09dc-4f6b-8a85-f51056abadf7
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:d6f8c668-bd22-4fab-a5d2-87ba1dc11074'
+  module:
+    - block_content
+  theme:
+    - ircc_new
+id: ircc_new_quicklinks
+theme: ircc_new
+region: header
+weight: -18
+provider: null
+plugin: 'block_content:d6f8c668-bd22-4fab-a5d2-87ba1dc11074'
+settings:
+  id: 'block_content:d6f8c668-bd22-4fab-a5d2-87ba1dc11074'
+  label: 'Quick Links'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

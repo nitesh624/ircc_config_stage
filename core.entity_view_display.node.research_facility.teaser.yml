@@ -1,0 +1,28 @@
+uuid: 2ec30426-9319-4319-bfc2-68d958f0da92
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.research_facility.body
+    - node.type.research_facility
+  module:
+    - text
+    - user
+id: node.research_facility.teaser
+targetEntityType: node
+bundle: research_facility
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

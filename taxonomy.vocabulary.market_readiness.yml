@@ -1,0 +1,9 @@
+uuid: 9bed1bc5-1ff9-4254-9806-6313da57e521
+langcode: en
+status: true
+dependencies: {  }
+name: 'Market readiness'
+vid: market_readiness
+description: ''
+hierarchy: 0
+weight: 0

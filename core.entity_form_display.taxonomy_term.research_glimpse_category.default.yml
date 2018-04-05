@@ -1,0 +1,29 @@
+uuid: c19bc82e-7b0a-4e85-b671-9d83056da684
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.research_glimpse_category
+  module:
+    - path
+id: taxonomy_term.research_glimpse_category.default
+targetEntityType: taxonomy_term
+bundle: research_glimpse_category
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true

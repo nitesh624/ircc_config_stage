@@ -1,0 +1,28 @@
+uuid: 694be709-735c-404c-b42e-a41e7d5f05e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.department_glimpses
+  module:
+    - facets
+    - system
+  theme:
+    - ircc_new
+id: departmentglimpses
+theme: ircc_new
+region: sidebar_first
+weight: -17
+provider: null
+plugin: 'facet_block:department_glimpses'
+settings:
+  id: 'facet_block:department_glimpses'
+  label: Department
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-search/glimpses
+    negate: false
+    context_mapping: {  }

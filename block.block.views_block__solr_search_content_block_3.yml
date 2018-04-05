@@ -1,0 +1,30 @@
+uuid: bf5e3067-cd70-4014-bb71-4812571682e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.solr_search_content
+  module:
+    - system
+    - views
+  theme:
+    - ircc_new
+id: views_block__solr_search_content_block_3
+theme: ircc_new
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:solr_search_content-block_3'
+settings:
+  id: 'views_block:solr_search_content-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/29163
+    negate: false
+    context_mapping: {  }

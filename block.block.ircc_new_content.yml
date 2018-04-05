@@ -1,0 +1,22 @@
+uuid: 763b1736-6635-4f91-9455-6f095fcea65d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ircc_new
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: ircc_new_content
+theme: ircc_new
+region: content
+weight: -18
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

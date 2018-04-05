@@ -1,0 +1,9 @@
+uuid: f99253e6-f539-43c3-ad6c-b503af61b32f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Technology Category'
+vid: technology_category
+description: 'Category of Technology'
+hierarchy: 0
+weight: 0

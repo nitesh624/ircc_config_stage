@@ -1,0 +1,22 @@
+uuid: 624778da-9da2-43c5-b497-757b6b618f12
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ircc_new
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: ircc_new_powered
+theme: ircc_new
+region: header
+weight: -16
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

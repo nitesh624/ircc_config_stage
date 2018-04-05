@@ -1,0 +1,25 @@
+uuid: 2ea69389-a8dd-4f19-bf9f-7811b59c0390
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:08aec2e3-53cb-473e-b5ed-c691db5675e4'
+  module:
+    - block_content
+  theme:
+    - ircc_new
+id: addressfooterfirst
+theme: ircc_new
+region: footer_first
+weight: -17
+provider: null
+plugin: 'block_content:08aec2e3-53cb-473e-b5ed-c691db5675e4'
+settings:
+  id: 'block_content:08aec2e3-53cb-473e-b5ed-c691db5675e4'
+  label: ADDRESS
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 04e76f11-9990-4174-bdfa-c814f720c60a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.events
+  module:
+    - file
+id: node.events.field_file
+field_name: field_file
+entity_type: node
+bundle: events
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

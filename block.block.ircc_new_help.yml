@@ -1,0 +1,22 @@
+uuid: 858669b3-fcc1-409e-adab-0cd286dff474
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - ircc_new
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: ircc_new_help
+theme: ircc_new
+region: header
+weight: -17
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

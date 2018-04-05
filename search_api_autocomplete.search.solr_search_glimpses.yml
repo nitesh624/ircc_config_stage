@@ -1,0 +1,25 @@
+uuid: 655878d5-9862-40b4-8ac8-8bb36c7c265c
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.default_solr_index
+    - views.view.solr_search_glimpses
+  module:
+    - views
+    - search_api_autocomplete
+id: solr_search_glimpses
+label: 'Solr Search Glimpses'
+index_id: default_solr_index
+suggester_settings:
+  live_results:
+    fields: {  }
+    view_modes: {  }
+suggester_weights: {  }
+suggester_limits: {  }
+search_settings:
+  'views:solr_search_glimpses':
+    displays:
+      default: true
+      selected: {  }
+options: {  }

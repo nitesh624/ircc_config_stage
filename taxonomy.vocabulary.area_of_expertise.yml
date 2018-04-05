@@ -1,0 +1,9 @@
+uuid: e913d96a-4938-44eb-9be8-0dd85415158d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Area Of Expertise'
+vid: area_of_expertise
+description: 'Free tags Taxonomy'
+hierarchy: 0
+weight: 0
