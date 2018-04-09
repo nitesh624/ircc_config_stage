@@ -357,7 +357,7 @@ display:
             alter_text: false
             text: ''
             make_link: false
-            path: ''
+            path: '{{path}}'
             absolute: false
             external: false
             replace_spaces: false
@@ -370,14 +370,14 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 20
+            max_length: 40
             word_boundary: true
             ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
-            trim: false
+            strip_tags: true
+            trim: true
             preserve_tags: ''
             html: false
           element_type: ''
@@ -393,19 +393,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: smart_trim
+          type: string
           settings:
-            trim_length: 40
-            trim_type: chars
-            trim_suffix: ...
-            wrap_output: false
-            wrap_class: trimmed
-            more_link: false
-            more_text: 'View Details'
-            more_class: ''
-            trim_options:
-              text: false
-              trim_zero: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -504,9 +494,9 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"research-highlights\">\n<div class=rh-img>{{ field_image_glimpse }}</div>\n<div class=\"rh-title\"><h5>{{ title }}</div>\n<div class=\"rh-body\">{{ body }}</div>\n</div>\n\n"
+            text: "<div class=\"research-highlights\">\n<div class=rh-img>{{ field_image_glimpse }}</div>\n<div class=\"rh-title\"><a href=\"{{ path }}\">{{ title }}</a></div>\n<div class=\"rh-body\">{{ body }}</div>\n</div>\n\n"
             make_link: false
-            path: ''
+            path: '[current-page:url]'
             absolute: false
             external: false
             replace_spaces: false
